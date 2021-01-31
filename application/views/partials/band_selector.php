@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * A helper to build the Band selectors
+ *
+ * Ideally, those bands could be stored and manage in the DB, as it is done with Modes. But from the
+ * time being this helpers is enough to keep in one place the logic for building the Band/RX Band
+ * selectors and, eventually, to "manage" them in a hardcoded-way.
+ *
+ * So, please considered this partial as a _temporary_ patch.
+ */
+
 $this->load->helper('form');
 
 $default_name = 'band';
