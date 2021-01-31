@@ -1,4 +1,8 @@
-<select id="band" class="form-control form-control-sm" name="band">
+<select
+  id="<?php echo $id ?? 'band'; ?>"
+  name="<?php echo $name ?? 'band'; ?>"
+  class="<?php echo $cssClass ?? 'form-control form-control-sm'; ?>"
+>
   <optgroup label="HF">
     <option value="160m" <?php if($this->session->userdata('band') == "160m") { echo "selected=\"selected\""; } ?>>160m</option>
     <option value="80m" <?php if($this->session->userdata('band') == "80m") { echo "selected=\"selected\""; } ?>>80m</option>
