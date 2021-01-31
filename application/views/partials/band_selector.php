@@ -16,6 +16,10 @@ $options = array(
   'Microwave' => array_combine($microwave_bands, $microwave_bands)
 );
 
+if (isset($include_blank) && $include_blank === true) {
+  array_unshift($options, "");
+}
+
 $attributes = array (
   'id' => $id ?? $default_name,
   'class' => $cssClass ?? 'form-control form-control-sm'
