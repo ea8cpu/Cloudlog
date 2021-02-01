@@ -34,6 +34,8 @@ class Frequency {
   		'SSB'=>"21300000",
   		'DATA'=>"21080000",
   		'CW'=>"21020000"),
+	'11m'=>array(
+      'SSB'=>"27555000",
 	'12m'=>array(
   		'SSB'=>"24950000",
   		'DATA'=>"24925000",
@@ -113,7 +115,9 @@ class Frequency {
 			$Band = "15m";
 		} else if ($Frequency > 23000000 && $Frequency < 25000000) {
 			$Band = "12m";
-		} else if ($Frequency > 27000000 && $Frequency < 30000000) {
+		} else if ($Frequency > 25000000 && $Frequency < 28315000) {
+			$Band = "11m";
+		} else if ($Frequency > 28315000 && $Frequency < 30000000) {
 			$Band = "10m";
 		} else if ($Frequency > 49000000 && $Frequency < 52000000) {
 			$Band = "6m";
