@@ -12,6 +12,7 @@ $lang['general_word_choose_file'] = 'Choose file';
 
 $lang['general_word_date'] = 'Date';
 $lang['general_word_time'] = 'Time';
+$lang['general_word_datetime'] = 'Date/Time';
 $lang['general_word_none'] = 'None';
 $lang['general_word_name'] = 'Name';
 $lang['general_word_location'] = 'Location';
@@ -20,7 +21,6 @@ $lang['general_word_general'] = 'General';
 $lang['general_word_satellite'] = 'Satellite';
 $lang['general_word_satellite_short'] = 'Sat';
 $lang['general_word_notes'] = 'Notes';
-$lang['general_word_comment'] = 'Comment';
 $lang['general_word_country'] = 'Country';
 
 $lang['general_word_total'] = 'Total';
@@ -38,6 +38,8 @@ $lang['general_word_method'] = 'Method';
 $lang['general_word_sent'] = 'Sent';
 $lang['general_word_received'] = 'Received';
 $lang['general_word_requested'] = 'Requested';
+$lang['general_word_qslcard'] = 'QSL Card';
+$lang['general_word_qslcard_management'] = 'QSL Management';
 $lang['general_word_qslcards'] = 'QSL Cards';
 $lang['general_word_qslcard_direct'] = 'Direct';
 $lang['general_word_qslcard_bureau'] = 'Bureau';
@@ -48,6 +50,8 @@ $lang['general_mark_qsl_rx_bureau'] = 'Mark QSL Received (Bureau)';
 $lang['general_mark_qsl_rx_direct'] = 'Mark QSL Received (Direct)';
 
 $lang['general_delete_qso'] = 'Delete QSO';
+
+$lang['general_total_distance'] = 'Total Distance';
 
 // Cloudlog Terms
 $lang['cloudlog_station_profile'] = 'Station Profile';

@@ -78,13 +78,21 @@ class Options extends CI_Controller {
 				$this->session->set_flashdata('success', 'Theme changed to '.$this->input->post('theme'));
 			}
 
+			// Update theme choice within the options system
+			$search_update_status = $this->optionslib->update('global_search', $this->input->post('globalSearch'));
+
+			// If theme update is complete set a flashsession with a success note
+			if($search_update_status == TRUE) {
+				$this->session->set_flashdata('success', 'Global Search changed to '.$this->input->post('globalSearch'));
+			}
+
 			// Update Lang choice within the options system
-			$lang_update_status = $this->optionslib->update('language', $this->input->post('language'));
+			// $lang_update_status = $this->optionslib->update('language', $this->input->post('language'));
 
 			// If Lang update is complete set a flashsession with a success note
-			if($lang_update_status == TRUE) {
-				$this->session->set_flashdata('success', 'Language changed to '.ucfirst($this->input->post('language')));
-			}
+			// if($lang_update_status == TRUE) {
+			// 	$this->session->set_flashdata('success', 'Language changed to '.ucfirst($this->input->post('language')));
+			// }
 
 			// Redirect back to /appearance
 			redirect('/options/appearance');
