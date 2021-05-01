@@ -81,8 +81,8 @@ if ( ! function_exists('form_dropdown'))
 			}
 			else
 			{
-				$form .= '<option value="'.html_escape($val).'"'
-					.(in_array($val, $selected) ? ' selected="selected"' : '').'>'
+				$form .= '<option value="'.html_escape($key).'"'
+					.(in_array($key, $selected) ? ' selected="selected"' : '').'>'
 					.(string) $val."</option>\n";
 			}
 		}
